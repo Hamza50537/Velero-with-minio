@@ -65,7 +65,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ## Velero Command Line Setup
 * Install velero cli that is used to perform the velero operations (it's not a part of Kubernetes cluster):
 * [Velero](https://velero.io/docs/v1.8/basic-install/)
-  ```bash
+```bash
   # Downlaod the latest version of velero cli
   curl -fsSL https://github.com/vmware-tanzu/velero/releases/latest/download/velero-linux-amd64.tar.gz -o velero.tar.gz
   # Extract the tarball
@@ -73,7 +73,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
   # Move the extracted velero binary to somewhere in your $PATH (/usr/local/bin for most users).
   cd velero-v1.16.2-linux-amd64
   mv velero /usr/local/bin
-  ```
+```
 ## Deploy MinIO for Backup Storage
 * Assuming that you have already cloned the github repo, please follow below steps to deploy minio on local kind cluster.
   ```bash
