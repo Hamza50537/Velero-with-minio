@@ -65,16 +65,12 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ## Velero Command Line Setup
 * Install velero cli that is used to perform the velero operations (it's not a part of Kubernetes cluster):
 * [Velero](https://velero.io/docs/v1.8/basic-install/)
-* Download the [latest release](https://github.com/vmware-tanzu/velero/releases) tarball for your client platform.
   ```bash
+  # Downlaod the latest version of velero cli
   curl -fsSL https://github.com/vmware-tanzu/velero/releases/latest/download/velero-linux-amd64.tar.gz -o velero.tar.gz
-  ```
-* Extract the tarball:
-  ```bash
+  # Extract the tarball
   tar -xvf velero.tar.gz
-  ```
-* Move the extracted velero binary to somewhere in your $PATH (/usr/local/bin for most users).
-  ```bash
+  # Move the extracted velero binary to somewhere in your $PATH (/usr/local/bin for most users).
   cd velero-v1.16.2-linux-amd64
   mv velero /usr/local/bin
   ```
